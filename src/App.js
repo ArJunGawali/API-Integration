@@ -84,7 +84,12 @@ function App() {
   return (
     <div className="App">
       <div className="top">
-        <form onSubmit={formControlYear} style={{ marginRight: "10px" }}>
+        <form
+          onSubmit={formControlYear}
+          style={{
+            marginRight: "10px",
+          }}
+        >
           <TextField
             className="year"
             id="outlined-basic"
@@ -96,7 +101,12 @@ function App() {
           />
         </form>
         <ToggleButton
-          style={{ marginRight: "10px" }}
+          style={{
+            marginRight: "10px",
+            backgroundColor: "white",
+            height: "60px",
+            fontWeight: "bolder",
+          }}
           value="Success Land"
           selected={successLand}
           onChange={() => {
@@ -107,15 +117,19 @@ function App() {
           Success Land{" "}
         </ToggleButton>
         <ToggleButton
-          style={{ marginRight: "10px" }}
+          style={{
+            backgroundColor: "white",
+            height: "60px",
+            textAlign: "center",
+            fontWeight: "bolder",
+          }}
           value="Success Launch"
           selected={successLaunch}
           onChange={() => {
             setsuccessLaunch(!successLaunch);
           }}
         >
-          {" "}
-          Success Launch{" "}
+          Success Launch
         </ToggleButton>
       </div>
       <div className="mobile">

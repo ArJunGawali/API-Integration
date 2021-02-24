@@ -9,13 +9,17 @@ function Mobileview({ data, setdata }) {
             <img src={row.links.mission_patch} width="100" height="100" />
           </div>
           <div className="data">
-            Flight No : {row.flight_number}
+            <span>Flight No : </span>
+            {row.flight_number}
             <br />
-            Mission Name : {row.mission_name}
+            <span>Mission Name : </span>
+            {row.mission_name}
             <br />
-            Launch Year : {row.launch_year}
+            <span>Launch Year : </span>
+            {row.launch_year}
             <br />
-            Rocket Name : {row.rocket.rocket_name}
+            <span>Rocket Name : </span>
+            {row.rocket.rocket_name}
             <br />
           </div>
         </div>
