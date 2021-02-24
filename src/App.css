@@ -14,14 +14,14 @@
 }
 .rowDetails {
   background-color: aqua;
+  border-radius: 10px;
+  margin: 5px;
 }
 
 .rowDetails :hover {
   background-color: rgb(216, 231, 233);
 }
-.App {
-  width: 100%;
-}
+
 .mobile {
   display: none;
 }
